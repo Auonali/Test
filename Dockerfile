@@ -3,5 +3,5 @@ WORKDIR /usr/app
 COPY ./ /usr/app
 RUN npm install
 RUN npm run test
-EXPOSE 8000
+EXPOSE 8000:8000
 CMD ["node","app.js"]
